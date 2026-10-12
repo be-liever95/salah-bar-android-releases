@@ -1,0 +1,16 @@
+Salah Bar for Android
+Copyright (c) 2026 Mumin Muhammedoglu. All rights reserved.
+
+This software and its source code are the property of the copyright holder.
+No permission is granted to copy, modify, merge, publish, distribute,
+sublicense, sell, or create derivative works from it, in whole or in part,
+except as stated below or with the copyright holder's prior written
+permission.
+
+Exceptions:
+
+1. Third-party components keep their own licenses. See
+   THIRD_PARTY_NOTICES.md. Versions 1.0.0 and 1.0.1 included a prayer-time
+   engine derived from PrayTimes.js (Salah.Solar.dll; source in
+   release-repo/third-party/SolarModel-1.0.0-1.0.1.cs), licensed under the GNU
+   Lesser General Public License, version 3. Later versions don't include it.
