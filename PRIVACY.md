@@ -1,6 +1,6 @@
 # Salah Bar for Android: Privacy Policy
 
-*Last updated: 13 October 2026*
+*Last updated: 14 October 2026*
 
 **In short: Salah Bar collects nothing.** There are no accounts, no analytics, no ads and no
 tracking. Your settings, your location and your prayer log stay on your phone, unless you choose
@@ -18,6 +18,12 @@ to sync them through a file in your own cloud drive. The developer never receive
 - **Whether you're busy.** To keep the adhan quiet during a call, or when the phone is on silent
   or Do Not Disturb, Salah Bar checks at prayer time whether a call is in progress and how the
   ringer is set. It never listens to or records anything, and stores nothing about it.
+- **Your calendar (only if you turn it on).** In Settings → Calendar you can let Salah Bar read
+  your calendar's events, to warn you about meetings that overlap a prayer, and write prayer
+  blocks into a calendar you choose. The events are read on your phone and never sent anywhere.
+  Salah Bar only ever changes or deletes the prayer blocks it created. If the calendar you choose
+  syncs to an account (such as Google Calendar), that account's service receives the blocks, as
+  with any event you add.
 - **Reminders** are scheduled on your phone with Android's alarms and shown as notifications on
   your phone.
 
@@ -25,7 +31,7 @@ to sync them through a file in your own cloud drive. The developer never receive
 
 In Settings → Sync and backup you can choose a file in a cloud drive you already use (Google
 Drive, OneDrive, Nextcloud or any app that appears in Android's file picker). Salah Bar then
-writes your settings, saved cities, prayer log, Ramadan log and Quran places to that file, with
+writes your settings, saved cities, prayer log, Ramadan log, Khatma progress and Quran places to that file, with
 your phone's name (as set in Android's settings) so your other devices can show where the data
 came from, and reads what your other devices wrote there. The file goes only where you put it:
 Salah Bar has no server, and the developer never sees it. Your cloud drive's own privacy policy
@@ -50,9 +56,13 @@ sees your phone's IP address.
 | **mp3quran.net** | When you use the Quran tab: the list of reciters (at most once a week), the surahs you play or download, and ayah timings for Hifz | Requests for those files |
 | **EveryAyah.com** | Hifz with recitations it serves ayah by ayah | Requests for those ayahs' files |
 | **hisnmuslim.com** | When you listen to a dua | A request for that dua's recording |
+| **android.quran.com** | When you open the list of Quran translations and tafsirs, or download one | Requests for that list and those editions |
+| **files.quran.app** | When you download the printed Mushaf pages | Requests for those page images |
 | **GitHub** | When you choose or preview an adhan from the online library | A request for that adhan's file |
 
 Links you tap (such as Tanzil.net for the Quran text's source) open in your browser.
+**Nearby mosques** hands your location to the maps app you choose on your phone, which searches
+for mosques around it; that app's own privacy policy applies. Salah Bar itself sends it nowhere.
 
 ## Children
 
