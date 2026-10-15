@@ -12,7 +12,13 @@ to sync them through a file in your own cloud drive. The developer never receive
   calculate prayer times and the Qibla direction. The calculation happens on your phone. The
   place name (such as "Manisa, TR") and its time zone come from a list of cities built into the
   app, so your location is never sent anywhere to be named. Salah Bar keeps your last location
-  on your phone so the times are right the next time it opens. Your location is never synced.
+  on your phone so the times are right the next time it opens. Your location is never synced
+  to a cloud drive.
+- **Your watch.** If you install Salah Bar on a Wear OS watch, your phone hands it your
+  settings and the city on show (with its location), so the watch can calculate the times for
+  its tile and complications. They go over Wear OS's own phone-to-watch connection (Google Play
+  services), which may carry them through Google's servers when the watch is connected by Wi-Fi
+  rather than Bluetooth. Nothing reaches the developer.
 - **Your settings**, your saved cities, your prayer log, your Ramadan log, where you stopped in
   each surah, and any adhans and recitations you download.
 - **Whether you're busy.** To keep the adhan quiet during a call, or when the phone is on silent
