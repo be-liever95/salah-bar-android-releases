@@ -27,6 +27,11 @@ notice is kept in the bundled file.
 15,000+ people, licensed under **Creative Commons Attribution 4.0**
 (https://creativecommons.org/licenses/by/4.0/). Built by `tools/gen-cities.py`.
 
+## Natural Earth (world outline)
+`data/world-land.json` is derived from Natural Earth 1:110m land
+(https://www.naturalearthdata.com), public domain, built by `tools/gen-world.py`,
+no endorsement implied.
+
 ## Translations
 English quotes use **Sahih International**; Turkish quotes use the **Diyanet İşleri
 Başkanlığı** translation. These belong to their publishers.

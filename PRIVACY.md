@@ -1,6 +1,6 @@
 # Salah Bar for Android: Privacy Policy
 
-*Last updated: 14 October 2026*
+*Last updated: 15 October 2026*
 
 **In short: Salah Bar collects nothing.** There are no accounts, no analytics, no ads and no
 tracking. Your settings, your location and your prayer log stay on your phone, unless you choose
@@ -24,6 +24,11 @@ to sync them through a file in your own cloud drive. The developer never receive
   Salah Bar only ever changes or deletes the prayer blocks it created. If the calendar you choose
   syncs to an account (such as Google Calendar), that account's service receives the blocks, as
   with any event you add.
+- **Do Not Disturb during prayer (only if you turn it on).** In Settings → Reminders you can let
+  Salah Bar turn on Do Not Disturb for a few minutes at each prayer you choose. Android asks you
+  to allow Do Not Disturb access first. Salah Bar only turns on its own quiet time and puts the
+  phone back as it was afterwards; it keeps nothing about it but the current quiet time.
+- **The Tasbih counter** is kept on your phone; it isn't synced.
 - **Reminders** are scheduled on your phone with Android's alarms and shown as notifications on
   your phone.
 
