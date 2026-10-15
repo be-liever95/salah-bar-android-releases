@@ -41,9 +41,13 @@ The bundled default adhan and the recordings in the online library belong to the
 reciters and producers and are not covered by Salah Bar's license.
 
 ## Libraries
-- **AndroidX** (Core, Activity, Lifecycle, Compose, Material 3) and **Media3 ExoPlayer**:
+- **AndroidX** (Core, Activity, Lifecycle, Compose, Material 3 and its icons) and **Media3 ExoPlayer**:
   Copyright The Android Open Source Project, Apache License 2.0
   (https://www.apache.org/licenses/LICENSE-2.0).
+- **osmdroid** (the Nearby mosques map): Copyright osmdroid contributors, Apache License 2.0
+  (https://github.com/osmdroid/osmdroid).
+- **Map data and tiles** in Nearby mosques: © OpenStreetMap contributors, Open Database License
+  (https://www.openstreetmap.org/copyright).
 - **Kotlin** standard library and **kotlinx.serialization**: Copyright JetBrains s.r.o. and
   Kotlin contributors, Apache License 2.0.
 - **ICU4J** (tests only, not in the app): Copyright Unicode, Inc., Unicode License v3

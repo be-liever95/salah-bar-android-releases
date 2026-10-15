@@ -4,7 +4,8 @@
 
 **In short: Salah Bar collects nothing.** There are no accounts, no analytics, no ads and no
 tracking. Your settings, your location and your prayer log stay on your phone, unless you choose
-to sync them through a file in your own cloud drive. The developer never receives any of your data.
+to sync them through a file in your own cloud drive (or open Nearby mosques, which asks
+OpenStreetMap for the mosques around you). The developer never receives any of your data.
 
 ## What stays on your phone
 
@@ -59,7 +60,8 @@ backup. You can turn backup off in Android's settings.
 ## What goes over the internet
 
 Salah Bar only connects to the services below, and only for the feature named. None of them
-receives your name, your location, your settings or an account, but like any web request each
+receives your name, your settings or an account, and only OpenStreetMap (for Nearby mosques)
+receives a location, but like any web request each
 sees your phone's IP address.
 
 | Service | When | What it receives |
@@ -70,10 +72,11 @@ sees your phone's IP address.
 | **android.quran.com** | When you open the list of Quran translations and tafsirs, or download one | Requests for that list and those editions |
 | **files.quran.app** | When you download the printed Mushaf pages | Requests for those page images |
 | **GitHub** | When you choose or preview an adhan from the online library | A request for that adhan's file |
+| **OpenStreetMap** (Nominatim search and map tiles) | Only when you open Nearby mosques, on the Qibla screen | The point to search around (your location or the city on show, rounded to about 100 m), and the map tiles of that area ([OpenStreetMap's privacy policy](https://osmfoundation.org/wiki/Privacy_Policy) applies) |
 
 Links you tap (such as Tanzil.net for the Quran text's source) open in your browser.
-**Nearby mosques** hands your location to the maps app you choose on your phone, which searches
-for mosques around it; that app's own privacy policy applies. Salah Bar itself sends it nowhere.
+Directions to a mosque open in the maps app you choose on your phone; that app's own privacy
+policy applies.
 
 ## Children
 
