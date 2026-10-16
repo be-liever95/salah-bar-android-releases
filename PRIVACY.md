@@ -1,16 +1,18 @@
 # Salah Bar for Android: Privacy Policy
 
-*Last updated: 15 October 2026*
+*Last updated: 16 October 2026*
 
 **In short: Salah Bar collects nothing.** There are no accounts, no analytics, no ads and no
 tracking. Your settings, your location and your prayer log stay on your phone, unless you choose
 to sync them through a file in your own cloud drive (or open Nearby mosques, which asks
-OpenStreetMap for the mosques around you). The developer never receives any of your data.
+OpenStreetMap for the mosques around you, or a map, which loads map images of that area). The
+developer never receives any of your data.
 
 ## What stays on your phone
 
-- **Your location.** With your permission, Android tells Salah Bar your approximate location, to
-  calculate prayer times and the Qibla direction. The calculation happens on your phone. The
+- **Your location.** With your permission, Android tells Salah Bar your location, to
+  calculate prayer times and the Qibla direction (an approximate location is enough; Nearby mosques
+  uses your precise location, if you allow it, to tell which mosque is nearest). The calculation happens on your phone. The
   place name (such as "Manisa, TR") and its time zone come from a list of cities built into the
   app, so your location is never sent anywhere to be named. Salah Bar keeps your last location
   on your phone so the times are right the next time it opens. Your location is never synced
@@ -61,7 +63,7 @@ backup. You can turn backup off in Android's settings.
 
 Salah Bar only connects to the services below, and only for the feature named. None of them
 receives your name, your settings or an account, and only OpenStreetMap (for Nearby mosques)
-receives a location, but like any web request each
+and OpenFreeMap (for the maps) receive a location, but like any web request each
 sees your phone's IP address.
 
 | Service | When | What it receives |
@@ -72,7 +74,8 @@ sees your phone's IP address.
 | **android.quran.com** | When you open the list of Quran translations and tafsirs, or download one | Requests for that list and those editions |
 | **files.quran.app** | When you download the printed Mushaf pages | Requests for those page images |
 | **GitHub** | When you choose or preview an adhan from the online library | A request for that adhan's file |
-| **OpenStreetMap** (Nominatim search and map tiles) | Only when you open Nearby mosques, on the Qibla screen | The point to search around (your location or the city on show, rounded to about 100 m), and the map tiles of that area ([OpenStreetMap's privacy policy](https://osmfoundation.org/wiki/Privacy_Policy) applies) |
+| **OpenStreetMap** (Nominatim search) | Only when you open Nearby mosques, on the Qibla screen | The point to search around (your location or the city on show, rounded to about 100 m) ([OpenStreetMap's privacy policy](https://osmfoundation.org/wiki/Privacy_Policy) applies) |
+| **OpenFreeMap** (map tiles, from OpenStreetMap data) | When a map is on screen: Nearby mosques, and the Qibla screen's Map | Requests for the map tiles of the area shown ([OpenFreeMap](https://openfreemap.org)) |
 
 Links you tap (such as Tanzil.net for the Quran text's source) open in your browser.
 Directions to a mosque open in the maps app you choose on your phone; that app's own privacy
