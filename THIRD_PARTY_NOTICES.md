@@ -40,6 +40,15 @@ Başkanlığı** translation. These belong to their publishers.
 The bundled default adhan and the recordings in the online library belong to their
 reciters and producers and are not covered by Salah Bar's license.
 
+These openly licensed recordings in the library are used under their licenses (each is also
+credited where it's chosen in the app):
+- “Call to prayer from the Prophet's Mosque” by ejaz215, CC BY 3.0, via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:33937_ejaz215_call-to-prayer-from-the-prophet-s-mo.ogg
+- “AZAAN in Makkah” by Seyfula Islam, CC BY 3.0, via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Adhan,_Great_Mosque_of_Mecca_-_Jan_21,_2013.webm
+- “Eid al-Fitr Fajr azan at Malmö Mosque” by Islamic Center Malmö, CC BY 3.0, via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Eid_al-Fitr_Fajr_azan_at_Malmö_Mosque_-_19_August_2012.webm
+- “Adhan in Shalqar mosque” by Esetok, CC BY-SA 4.0, via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Adhan_in_Shalqar_mosque.webm
+- “Islamic Call to Prayer (Dhuhr Adhan)” by RJStefanski, CC BY 3.0, via Freesound: https://freesound.org/people/RJStefanski/sounds/255231/
+- “adzan-forest” by bagustris, CC0, via Freesound: https://freesound.org/people/bagustris/sounds/508441/
+
 ## Libraries
 - **AndroidX** (Core, Activity, Lifecycle, Compose, Material 3 and its icons) and **Media3 ExoPlayer**:
   Copyright The Android Open Source Project, Apache License 2.0

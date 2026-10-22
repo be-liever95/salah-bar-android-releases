@@ -1,6 +1,6 @@
 # Salah Bar for Android: Privacy Policy
 
-*Last updated: 16 October 2026*
+*Last updated: 22 October 2026*
 
 **In short: Salah Bar collects nothing.** There are no accounts, no analytics, no ads and no
 tracking. Your settings, your location and your prayer log stay on your phone, unless you choose
@@ -18,8 +18,9 @@ developer never receives any of your data.
   on your phone so the times are right the next time it opens. Your location is never synced
   to a cloud drive.
 - **Your watch.** If you install Salah Bar on a Wear OS watch, your phone hands it your
-  settings and the city on show (with its location), so the watch can calculate the times for
-  its tile and complications. They go over Wear OS's own phone-to-watch connection (Google Play
+  settings, the city on show (with its location) and the prayers you marked around today, so
+  the watch can calculate the times for its tile and complications; prayers you mark on the
+  watch go back to your phone's prayer log. They go over Wear OS's own phone-to-watch connection (Google Play
   services), which may carry them through Google's servers when the watch is connected by Wi-Fi
   rather than Bluetooth. Nothing reaches the developer.
 - **Your settings**, your saved cities, your prayer log, your Ramadan log, where you stopped in
