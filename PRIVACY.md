@@ -1,6 +1,6 @@
 # Salah Bar for Android: Privacy Policy
 
-*Last updated: 22 October 2026*
+*Last updated: 28 October 2026*
 
 **In short: Salah Bar collects nothing.** There are no accounts, no analytics, no ads and no
 tracking. Your settings, your location and your prayer log stay on your phone, unless you choose
@@ -38,6 +38,16 @@ developer never receives any of your data.
   Salah Bar turn on Do Not Disturb for a few minutes at each prayer you choose. Android asks you
   to allow Do Not Disturb access first. Salah Bar only turns on its own quiet time and puts the
   phone back as it was afterwards; it keeps nothing about it but the current quiet time.
+- **For sisters (only if you choose Sister).** The excused days you log (when they started and
+  ended, and whether after childbirth), pregnancy and nursing if you set them, and the fasts you
+  have to make up are kept on your phone, to tell which prayers are excused and to predict the next
+  start. Notifications, widgets and the watch never mention them.
+- **Health Connect (only if you turn it on).** In Settings → For sisters you can link Salah Bar
+  with Health Connect, after Android asks your permission. Salah Bar then reads the menstruation
+  periods of the last 180 days recorded there, so the prayers of those days count as excused, and
+  writes the excused days you finish logging as menstruation periods. This data is used only for
+  that: it is never sent to the developer or anyone else, never used for advertising, and never
+  sold. You can remove the permission at any time in Health Connect.
 - **The Tasbih counter** is kept on your phone; it isn't synced.
 - **Reminders** are scheduled on your phone with Android's alarms and shown as notifications on
   your phone.
@@ -46,7 +56,7 @@ developer never receives any of your data.
 
 In Settings → Sync and backup you can choose a file in a cloud drive you already use (Google
 Drive, OneDrive, Nextcloud or any app that appears in Android's file picker). Salah Bar then
-writes your settings, saved cities, prayer log, Ramadan log, Khatma progress and Quran places to that file, with
+writes your settings, saved cities, prayer log, Ramadan log, excused days (For sisters), Khatma progress and Quran places to that file, with
 your phone's name (as set in Android's settings) so your other devices can show where the data
 came from, and reads what your other devices wrote there. The file goes only where you put it:
 Salah Bar has no server, and the developer never sees it. Your cloud drive's own privacy policy
@@ -57,8 +67,8 @@ same data to a file you choose, and **Import** reads one back.
 
 If backup is turned on in your phone's settings, Android may include Salah Bar's settings, logs
 and downloaded adhans in your phone's backup to your Google account, as it does for most apps, so
-they come back on a new phone. Salah Bar leaves its Quran downloads and its sync link out of that
-backup. You can turn backup off in Android's settings.
+they come back on a new phone. Salah Bar leaves its Quran downloads, its sync link and its Health Connect link out
+of that backup. You can turn backup off in Android's settings.
 
 ## What goes over the internet
 

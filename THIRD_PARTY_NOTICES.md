@@ -50,9 +50,11 @@ credited where it's chosen in the app):
 - “adzan-forest” by bagustris, CC0, via Freesound: https://freesound.org/people/bagustris/sounds/508441/
 
 ## Libraries
-- **AndroidX** (Core, Activity, Lifecycle, Compose, Material 3 and its icons) and **Media3 ExoPlayer**:
+- **AndroidX** (Core, Activity, Lifecycle, Compose, Material 3 and its icons; on the watch Wear
+  Compose, Tiles, Complications and Watch Face Push) and **Media3 ExoPlayer**:
   Copyright The Android Open Source Project, Apache License 2.0
   (https://www.apache.org/licenses/LICENSE-2.0).
+- **Guava** (on the watch, with Watch Face Push): Copyright The Guava Authors, Apache License 2.0.
 - **MapLibre Native** (the Qibla and Nearby mosques maps): Copyright MapLibre contributors, BSD 2-Clause
   License (https://github.com/maplibre/maplibre-native). Map tiles from OpenFreeMap (https://openfreemap.org),
   data © OpenStreetMap contributors (ODbL).
