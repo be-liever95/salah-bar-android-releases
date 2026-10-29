@@ -49,6 +49,20 @@ credited where it's chosen in the app):
 - “Islamic Call to Prayer (Dhuhr Adhan)” by RJStefanski, CC BY 3.0, via Freesound: https://freesound.org/people/RJStefanski/sounds/255231/
 - “adzan-forest” by bagustris, CC0, via Freesound: https://freesound.org/people/bagustris/sounds/508441/
 
+## The 99 Names of Allah
+The names and their order are at-Tirmidhi's list (Jami' at-Tirmidhi 3507), in the public domain,
+as are their standard transliterations; their meanings in all twelve languages and the
+explanations (English, Turkish, Arabic) were written for Salah Bar (`shared/names/names.json`,
+from the Mac app). The Quran words shown with each name are the Tanzil Quran Text above, verbatim.
+
+The recording of each name is by **Mohammed Sadiq** (GraphicJunction.com), published on
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Arabic_pronunciation_of_names_of_God_in_Islam)
+(`01-ar-rahman.ogg` … `99-as-sabur.ogg`) under the
+[Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+licence. The app streams (and, on request, downloads) Commons' MP3 transcode of each file from
+upload.wikimedia.org, never bundles them and doesn't change them; the names screens credit the
+recordings. They are not covered by Salah Bar's license.
+
 ## Libraries
 - **AndroidX** (Core, Activity, Lifecycle, Compose, Material 3 and its icons; on the watch Wear
   Compose, Tiles, Complications and Watch Face Push) and **Media3 ExoPlayer**:
@@ -60,6 +74,8 @@ credited where it's chosen in the app):
   data © OpenStreetMap contributors (ODbL).
 - **Map data and tiles** in Nearby mosques: © OpenStreetMap contributors, Open Database License
   (https://www.openstreetmap.org/copyright).
+- **ZXing** ("Zebra Crossing") core, which reads the mosque's QR code in Settings → Iqama on the
+  phone: Copyright ZXing authors, Apache License 2.0 (https://github.com/zxing/zxing).
 - **Kotlin** standard library and **kotlinx.serialization**: Copyright JetBrains s.r.o. and
   Kotlin contributors, Apache License 2.0.
 - **ICU4J** (tests only, not in the app): Copyright Unicode, Inc., Unicode License v3

@@ -1,6 +1,6 @@
 # Salah Bar for Android: Privacy Policy
 
-*Last updated: 28 October 2026*
+*Last updated: 29 October 2026*
 
 **In short: Salah Bar collects nothing.** There are no accounts, no analytics, no ads and no
 tracking. Your settings, your location and your prayer log stay on your phone, unless you choose
@@ -23,6 +23,7 @@ developer never receives any of your data.
   watch go back to your phone's prayer log. They go over Wear OS's own phone-to-watch connection (Google Play
   services), which may carry them through Google's servers when the watch is connected by Wi-Fi
   rather than Bluetooth. Nothing reaches the developer.
+- **The camera (only if you use it).** The Qibla screen's Camera view shows what your rear camera sees with the Qibla drawn over it, and Settings → Iqama → Scan QR code reads your mosque's QR code on the phone; the picture stays on screen and is never stored or sent.
 - **Your settings**, your saved cities, your prayer log, your Ramadan log, where you stopped in
   each surah, and any adhans and recitations you download.
 - **Whether you're busy.** To keep the adhan quiet during a call, or when the phone is on silent
@@ -81,12 +82,21 @@ sees your phone's IP address.
 |---|---|---|
 | **mp3quran.net** | When you use the Quran tab: the list of reciters (at most once a week), the surahs you play or download, and ayah timings for Hifz | Requests for those files |
 | **EveryAyah.com** | Hifz with recitations it serves ayah by ayah | Requests for those ayahs' files |
-| **hisnmuslim.com** | When you listen to a dua | A request for that dua's recording |
+| **hisnmuslim.com** | When you listen to a dua read by Hamad al-Duraihim (the default reciter), or by another reciter who has no recording of it | A request for that dua's recording |
+| **IslamHouse.com** | When you listen to a dua read by Sulayman al-Shuwaihi or Walid Abu Ziyad (Duas → Reading and voice) | A request for the reciter's file that holds that dua |
+| **archive.org** (the Internet Archive) | When you listen to a dua read by Abu Ahmad al-Shaydhmi or the Dua & Zikr app's reciter | A request for the reciter's file that holds that dua |
 | **android.quran.com** | When you open the list of Quran translations and tafsirs, or download one | Requests for that list and those editions |
 | **files.quran.app** | When you download the printed Mushaf pages | Requests for those page images |
 | **GitHub** | When you choose or preview an adhan from the online library | A request for that adhan's file |
+| **Wikimedia Commons** (upload.wikimedia.org) | Only when you play a name in the 99 Names (or a name-of-the-day card) or download the names for offline use | Requests for the recordings you play or download |
+| **Your mosque's website** (the link you give) or **islamic.app** (api.islamic.app) | Only with *Iqama times from your mosque* on (Settings → Prayer Times → Iqama): when you save the link, when you tap *Refresh now*, and once a week | A request for the iqama timetable at that link (or that islamic.app mosque); nothing is sent with it |
 | **OpenStreetMap** (Nominatim search) | Only when you open Nearby mosques, on the Qibla screen | The point to search around (your location or the city on show, rounded to about 100 m) ([OpenStreetMap's privacy policy](https://osmfoundation.org/wiki/Privacy_Policy) applies) |
 | **OpenFreeMap** (map tiles, from OpenStreetMap data) | When a map is on screen: Nearby mosques, and the Qibla screen's Map | Requests for the map tiles of the area shown ([OpenFreeMap](https://openfreemap.org)) |
+
+**Automation webhook** (Settings → Advanced → Automation) is off by default: when you turn it on,
+Salah Bar sends the prayer's name, its time and iqama, the city and the Hijri date to the one address you
+choose, at prayer times and around the adhan. That address must be on your own network unless you
+tick "Allow internet addresses".
 
 Links you tap (such as Tanzil.net for the Quran text's source) open in your browser.
 Directions to a mosque open in the maps app you choose on your phone; that app's own privacy
