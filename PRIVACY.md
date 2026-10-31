@@ -1,12 +1,13 @@
 # Salah Bar for Android: Privacy Policy
 
-*Last updated: 29 October 2026*
+*Last updated: 31 October 2026*
 
 **In short: Salah Bar collects nothing.** There are no accounts, no analytics, no ads and no
 tracking. Your settings, your location and your prayer log stay on your phone, unless you choose
-to sync them through a file in your own cloud drive (or open Nearby mosques, which asks
+to sync them through your own Google Drive or a file in your own cloud drive (or open Nearby mosques, which asks
 OpenStreetMap for the mosques around you, or a map, which loads map images of that area). The
-developer never receives any of your data.
+developer never receives any of your data. The one exception, off until you turn it on, is the
+weather: then your location, rounded to about 10 km, goes to Open-Meteo (see below).
 
 ## What stays on your phone
 
@@ -22,7 +23,9 @@ developer never receives any of your data.
   the watch can calculate the times for its tile and complications; prayers you mark on the
   watch go back to your phone's prayer log. They go over Wear OS's own phone-to-watch connection (Google Play
   services), which may carry them through Google's servers when the watch is connected by Wi-Fi
-  rather than Bluetooth. Nothing reaches the developer.
+  rather than Bluetooth. Nothing reaches the developer. On a watch with GPS, the watch's Qibla
+  can use the watch's own location if you allow it on the watch: it's used on the watch only,
+  never sent to your phone or anywhere else, and left out of backups.
 - **The camera (only if you use it).** The Qibla screen's Camera view shows what your rear camera sees with the Qibla drawn over it, and Settings → Iqama → Scan QR code reads your mosque's QR code on the phone; the picture stays on screen and is never stored or sent.
 - **Your settings**, your saved cities, your prayer log, your Ramadan log, where you stopped in
   each surah, and any adhans and recitations you download.
@@ -55,7 +58,20 @@ developer never receives any of your data.
 
 ## Sync (only if you turn it on)
 
-In Settings → Sync and backup you can choose a file in a cloud drive you already use (Google
+**With Google Drive.** In Settings → Sync and backup you can tap *Sign in with Google*. Salah Bar
+then asks Google for one permission only, to keep its own file in your Google Drive's hidden app
+folder (the `drive.appdata` scope): it can't see, open or change any of your other files in Drive.
+It keeps the same sync file described below there, `Salah Bar sync.json`, sending it straight from
+your phone to your own Google Drive over HTTPS; there is no Salah Bar server in between, and the
+developer never sees the file or your account. Signing in is handled by Google Play services, which
+keeps the permission; Salah Bar stores only your account's email address on the phone, to show it
+and to sync in the background. Google's privacy policy applies to your Google account and Drive.
+*Sign out* takes this phone's data out of the file and stops syncing here; *Remove my data from
+Drive* deletes the file from your Drive (every device's data in it) and takes Salah Bar's access
+away. You can also remove Salah Bar's access at any time from your Google Account
+(Security → Third-party apps), and Drive → Settings → Manage apps lets you delete its hidden data.
+
+**With a file.** In Settings → Sync and backup you can instead choose a file in a cloud drive you already use (Google
 Drive, OneDrive, Nextcloud or any app that appears in Android's file picker). Salah Bar then
 writes your settings, saved cities, prayer log, Ramadan log, excused days (For sisters), Khatma progress and Quran places to that file, with
 your phone's name (as set in Android's settings) so your other devices can show where the data
@@ -74,8 +90,8 @@ of that backup. You can turn backup off in Android's settings.
 ## What goes over the internet
 
 Salah Bar only connects to the services below, and only for the feature named. None of them
-receives your name, your settings or an account, and only OpenStreetMap (for Nearby mosques)
-and OpenFreeMap (for the maps) receive a location, but like any web request each
+receives your name, your settings or an account, and only OpenStreetMap and the Overpass API (for
+Nearby mosques), OpenFreeMap (for the maps) and Open-Meteo (for the weather, if you turn it on) receive a location, but like any web request each
 sees your phone's IP address.
 
 | Service | When | What it receives |
@@ -91,7 +107,18 @@ sees your phone's IP address.
 | **Wikimedia Commons** (upload.wikimedia.org) | Only when you play a name in the 99 Names (or a name-of-the-day card) or download the names for offline use | Requests for the recordings you play or download |
 | **Your mosque's website** (the link you give) or **islamic.app** (api.islamic.app) | Only with *Iqama times from your mosque* on (Settings → Prayer Times → Iqama): when you save the link, when you tap *Refresh now*, and once a week | A request for the iqama timetable at that link (or that islamic.app mosque); nothing is sent with it |
 | **OpenStreetMap** (Nominatim search) | Only when you open Nearby mosques, on the Qibla screen | The point to search around (your location or the city on show, rounded to about 100 m) ([OpenStreetMap's privacy policy](https://osmfoundation.org/wiki/Privacy_Policy) applies) |
+| **Overpass API** (overpass-api.de, a free OpenStreetMap search run by FOSSGIS e.V.) | Only when you open Nearby mosques, on the Qibla screen, at the same time as the Nominatim search | The same rounded point, to find every mosque mapped around it ([FOSSGIS terms of use](https://www.fossgis.de/arbeitsgruppen/osm-server/nutzungsbedingungen/)) |
+| **Open-Meteo** (api.open-meteo.com) | Only with *Show the weather* on (Settings → Appearance): when you turn it on, then at most every 30 minutes while the app is open | Your location rounded to 0.1° (about 10 km), to get the current weather there; nothing else is sent with it |
 | **OpenFreeMap** (map tiles, from OpenStreetMap data) | When a map is on screen: Nearby mosques, and the Qibla screen's Map | Requests for the map tiles of the area shown ([OpenFreeMap](https://openfreemap.org)) |
+
+**The weather** (off until you turn it on, on each phone). The sky behind the next prayer and in
+the widgets is worked out on the phone from the prayer times. If you turn on *Show the weather*
+(Settings → Appearance), Salah Bar first says what it will send, then asks Open-Meteo
+(open-meteo.com) for the current weather at the city on show rounded to 0.1° (about 10 km), at
+most every 30 minutes while the app is open (never in the background), with no account, key,
+cookie or identifier. The answer (clouds, rain, snow…) stays on the phone, is drawn by its widgets,
+and is left out of Android's backup. Turning the switch off stops the requests and forgets the last
+answer. Open-Meteo's terms and privacy policy apply to the request; its weather data is CC BY 4.0.
 
 **Automation webhook** (Settings → Advanced → Automation) is off by default: when you turn it on,
 Salah Bar sends the prayer's name, its time and iqama, the city and the Hijri date to the one address you
