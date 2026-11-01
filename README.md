@@ -14,7 +14,7 @@ Coming to Google Play; it's in closed testing now.
 
 ## Privacy
 
-Salah Bar collects nothing. See the [privacy policy](PRIVACY.md).
+Salah Bar has no accounts, ads, analytics or tracking. See the [privacy policy](PRIVACY.md), also at [salah-bar.com/privacy](https://salah-bar.com/privacy/).
 
 ## Licence
 

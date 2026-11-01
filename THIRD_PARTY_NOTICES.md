@@ -22,6 +22,15 @@ notice is kept in the bundled file.
 [SIL Open Font License 1.1](https://openfontlicense.org); its licence text is
 `shared/fonts/Amiri-OFL.txt`.
 
+## Google Sans and the Google "G" (Sign in with Google button)
+[Google Sans](https://github.com/googlefonts/googlesans) by The Google Sans Project Authors, instanced
+to Medium and subset for the button's labels (`app/src/main/res/font/google_sans_medium.ttf`), under the
+[SIL Open Font License 1.1](https://openfontlicense.org); its licence text is
+`app/src/main/assets/fonts/googlesans-OFL.txt`. The "G" logo (`res/drawable-*/google_g.png`) and the
+button's wording are Google's, from its Sign in with Google branding kit
+(https://developers.google.com/identity/branding-guidelines), used as those guidelines allow; Google
+and the Google logo are trademarks of Google LLC.
+
 ## GeoNames (city list)
 `data/cities.tsv.gz` is derived from GeoNames (https://www.geonames.org), cities with
 15,000+ people, licensed under **Creative Commons Attribution 4.0**
